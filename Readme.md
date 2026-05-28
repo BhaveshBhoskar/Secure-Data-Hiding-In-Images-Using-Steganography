@@ -1,0 +1,31 @@
+# Secure Image Steganography Tool
+
+## 📌 Project Overview
+This project is a Python-based steganography application designed to securely hide textual data within digital images. Developed in alignment with industry training from **IBM SkillsBuild**, this tool demonstrates key cybersecurity concepts, including data confidentiality and privacy. 
+
+By leveraging image processing techniques, the application allows a user to embed a secret message into an image using a passcode, and later extract the message using the same credentials.
+
+## ✨ Features
+* **Secure Data Hiding:** Embeds secret text messages directly into the pixel data of an image.
+* **Passcode Protection:** Requires a user-defined passcode to encrypt and decrypt the hidden message, adding a layer of authentication.
+* **Data Integrity:** Emphasizes the use of lossless image formats (PNG) to ensure the secret message is not destroyed by image compression.
+* **Graphical User Interface (GUI):** Utilizes Tkinter for an accessible, cross-platform user experience. *(Note: GUI implementation is currently in development/active in the main branch).*
+* **Cross-Platform Compatibility:** Runs seamlessly on Windows, macOS, and Linux environments.
+
+## 🛠️ Technologies & Libraries Used
+* **Python 3.x:** Core programming language.
+* **OpenCV (`cv2`):** Used for reading, processing, and writing image matrices.
+* **Tkinter:** Used for designing the interactive graphical user interface.
+* **OS Module:** Handles system-level operations, such as automatically opening the resulting image file.
+
+## 🚀 How to Run
+
+### Prerequisites
+Ensure you have Python installed on your system. You will also need to install the OpenCV library.
+```bash
+pip install opencv-python
+```
+
+```bash
+python steganography.py
+```
